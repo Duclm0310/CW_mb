@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "760522915628",
+    "firebase_url": "https://yogaclasses-9404d-default-rtdb.firebaseio.com",
+    "project_id": "yogaclasses-9404d",
+    "storage_bucket": "yogaclasses-9404d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760522915628:android:f403ce103d837682833689",
+        "android_client_info": {
+          "package_name": "com.example.appcl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgw0-tdE1YBmUQWnxV16xsonQyzLiyuNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760522915628:android:75a9a1c728863e95833689",
+        "android_client_info": {
+          "package_name": "com.example.cw_comp1786"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgw0-tdE1YBmUQWnxV16xsonQyzLiyuNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
