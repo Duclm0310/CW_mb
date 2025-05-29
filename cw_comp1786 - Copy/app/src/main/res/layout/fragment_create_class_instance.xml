@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassInstanceCreateFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--            android:prompt="Select Class"-->
+
+        <!--        android:prompt="Select Teacher"-->
+
+        <Spinner
+            android:id="@+id/spinner_class_update"
+            android:layout_width="410dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datepicker_class_instance_date_update" />
+
+        <Spinner
+            android:id="@+id/spinner_teacher_update"
+            android:layout_width="410dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_class_update" />
+
+        <TextView
+            android:id="@+id/text_day_update"
+            android:layout_width="179dp"
+            android:layout_height="45dp"
+            android:hint="Day (non-editable)"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toEndOf="@+id/text_time_update"
+            app:layout_constraintTop_toTopOf="@+id/text_time_update" />
+
+        <TextView
+            android:id="@+id/text_time_update"
+            android:layout_width="179dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Time (non-editable)"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_teacher_update" />
+
+        <DatePicker
+            android:id="@+id/datepicker_class_instance_date_update"
+            android:layout_width="358dp"
+            android:layout_height="390dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <Button
+            android:id="@+id/button_save_class_instance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="Save Class Instance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_time_update" />
+
+        <EditText
+            android:id="@+id/editComment_update"
+            android:layout_width="376dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="comment"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_time_update" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Dropdown chọn Teacher (User có role giáo viên) -->
+
+    <!-- TextView hiển thị Day, Time từ Class -->
+
+    <!-- DatePicker cho ngày phù hợp -->
+
+    <!-- Nút lưu -->
+
+
+</FrameLayout>

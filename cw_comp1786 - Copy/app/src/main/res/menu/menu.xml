@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home" android:icon="@drawable/home" />
+    <item android:title="Classes" />
+    <item android:title="Students and Instructors" />
+    <item android:title="Schedule" />
+    <item android:title="Settings" />
+</menu>

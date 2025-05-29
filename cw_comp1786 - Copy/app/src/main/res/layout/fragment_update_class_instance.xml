@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassInstanceDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/spinner_class_update"
+            android:layout_width="372dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datepicker_class_instance_date_update" />
+
+        <Spinner
+            android:id="@+id/spinner_teacher_update"
+            android:layout_width="371dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_class_update" />
+
+        <TextView
+            android:id="@+id/text_day_update"
+            android:layout_width="179dp"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.823"
+            app:layout_constraintStart_toEndOf="@+id/text_time_update"
+            app:layout_constraintTop_toTopOf="@+id/text_time_update" />
+
+        <TextView
+            android:id="@+id/text_time_update"
+            android:layout_width="179dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_teacher_update" />
+
+        <DatePicker
+            android:id="@+id/datepicker_class_instance_date_update"
+            android:layout_width="344dp"
+            android:layout_height="372dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editComment_update"
+            android:layout_width="376dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="Enter comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_time_update" />
+
+        <Button
+            android:id="@+id/button_update_class_instance_update"
+            android:layout_width="120dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="20dp"
+            android:text="Update Class Instance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editComment_update" />
+
+        <Button
+            android:id="@+id/button_update_class_instance_delete"
+            android:layout_width="120dp"
+            android:layout_height="59dp"
+            android:text="Delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
+            app:layout_constraintStart_toEndOf="@+id/button_update_class_instance_update"
+            app:layout_constraintTop_toTopOf="@+id/button_update_class_instance_update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
